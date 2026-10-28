@@ -934,3 +934,228 @@ $("#year").textContent = new Date().getFullYear();
 
 renderLessons();
 renderQuiz();
+
+const contohMateri = [
+  {
+    bahasa: "HTML",
+    judul: "Membuat Judul dan Paragraf",
+    kode: `<h1>Halo, Dunia!</h1>
+<p>Saya sedang belajar HTML.</p>`,
+    output: "Halo, Dunia!\nSaya sedang belajar HTML.",
+    penjelasan: "Tag h1 digunakan untuk judul utama, sedangkan tag p digunakan untuk paragraf."
+  },
+  {
+    bahasa: "HTML",
+    judul: "Membuat Tombol",
+    kode: `<button>Klik Saya</button>`,
+    output: "[ Klik Saya ]",
+    penjelasan: "Tag button digunakan untuk membuat tombol yang bisa diklik."
+  },
+  {
+    bahasa: "HTML",
+    judul: "Membuat Tautan",
+    kode: `<a href="https://www.google.com">Buka Google</a>`,
+    output: "Buka Google",
+    penjelasan: "Tag a digunakan untuk membuat tautan menuju halaman lain."
+  },
+  {
+    bahasa: "HTML",
+    judul: "Membuat Daftar",
+    kode: `<h2>Hobi Saya</h2>
+<ul>
+  <li>Membaca</li>
+  <li>Ngoding</li>
+  <li>Bermain game</li>
+</ul>`,
+    output: "Hobi Saya\n• Membaca\n• Ngoding\n• Bermain game",
+    penjelasan: "Tag ul membuat daftar tanpa nomor, sedangkan li membuat setiap item daftar."
+  },
+  {
+    bahasa: "CSS",
+    judul: "Mengubah Warna Teks",
+    kode: `h1 {
+  color: blue;
+}`,
+    output: "Teks judul berwarna biru.",
+    penjelasan: "Properti color digunakan untuk mengatur warna teks."
+  },
+  {
+    bahasa: "CSS",
+    judul: "Mengubah Warna Latar",
+    kode: `body {
+  background-color: lightyellow;
+}`,
+    output: "Latar halaman berwarna kuning muda.",
+    penjelasan: "Properti background-color digunakan untuk mengatur warna latar."
+  },
+  {
+    bahasa: "CSS",
+    judul: "Membuat Kartu",
+    kode: `.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #0002;
+}`,
+    output: "Sebuah kartu putih dengan sudut membulat dan bayangan.",
+    penjelasan: "Padding memberi ruang di dalam kartu, border-radius membulatkan sudut, dan box-shadow memberi bayangan."
+  },
+  {
+    bahasa: "CSS",
+    judul: "Membuat Tata Letak Flexbox",
+    kode: `.container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}`,
+    output: "Elemen tersusun mendatar dan berada di tengah.",
+    penjelasan: "Flexbox membantu mengatur posisi elemen secara fleksibel."
+  },
+  {
+    bahasa: "JavaScript",
+    judul: "Menampilkan Pesan",
+    kode: `console.log("Halo, Dunia!");`,
+    output: "Halo, Dunia!",
+    penjelasan: "console.log() digunakan untuk menampilkan informasi di console browser."
+  },
+  {
+    bahasa: "JavaScript",
+    judul: "Menggunakan Variabel",
+    kode: `const nama = "Aiko";
+console.log("Halo, " + nama);`,
+    output: "Halo, Aiko",
+    penjelasan: "Variabel menyimpan data. const digunakan untuk variabel yang tidak akan ditetapkan ulang."
+  },
+  {
+    bahasa: "JavaScript",
+    judul: "Operasi Matematika",
+    kode: `const a = 10;
+const b = 5;
+
+console.log(a + b);
+console.log(a * b);`,
+    output: "15\n50",
+    penjelasan: "Operator + digunakan untuk penjumlahan, sedangkan * digunakan untuk perkalian."
+  },
+  {
+    bahasa: "JavaScript",
+    judul: "Percabangan If Else",
+    kode: `const nilai = 85;
+
+if (nilai >= 75) {
+  console.log("Lulus");
+} else {
+  console.log("Belum lulus");
+}`,
+    output: "Lulus",
+    penjelasan: "If else menjalankan kode berbeda berdasarkan kondisi."
+  },
+  {
+    bahasa: "Python",
+    judul: "Menampilkan Teks",
+    kode: `print("Halo, Dunia!")`,
+    output: "Halo, Dunia!",
+    penjelasan: "Fungsi print() digunakan untuk menampilkan teks atau nilai."
+  },
+  {
+    bahasa: "Python",
+    judul: "Membuat Variabel",
+    kode: `nama = "Aiko"
+umur = 16
+
+print(nama)
+print(umur)`,
+    output: "Aiko\n16",
+    penjelasan: "Variabel digunakan untuk menyimpan data seperti teks dan angka."
+  },
+  {
+    bahasa: "Python",
+    judul: "Input dari Pengguna",
+    kode: `nama = input("Masukkan nama: ")
+print("Halo,", nama)`,
+    output: "Masukkan nama: Aiko\nHalo, Aiko",
+    penjelasan: "input() menerima masukan dari pengguna. Contoh output menunjukkan pengguna memasukkan nama Aiko."
+  },
+  {
+    bahasa: "Python",
+    judul: "Perulangan For",
+    kode: `for angka in range(1, 6):
+    print(angka)`,
+    output: "1\n2\n3\n4\n5",
+    penjelasan: "Perulangan for menjalankan kode berulang kali. range(1, 6) menghasilkan angka 1 sampai 5."
+  },
+  {
+    bahasa: "Python",
+    judul: "Membuat Fungsi",
+    kode: `def sapa(nama):
+    print("Halo,", nama)
+
+sapa("Aiko")`,
+    output: "Halo, Aiko",
+    penjelasan: "Fungsi membantu mengelompokkan kode agar dapat digunakan kembali."
+  },
+  {
+    bahasa: "Python",
+    judul: "Membuat Kalkulator Sederhana",
+    kode: `angka1 = 10
+angka2 = 5
+
+print("Tambah:", angka1 + angka2)
+print("Kurang:", angka1 - angka2)
+print("Kali:", angka1 * angka2)
+print("Bagi:", angka1 / angka2)`,
+    output: "Tambah: 15\nKurang: 5\nKali: 50\nBagi: 2.0",
+    penjelasan: "Program ini menggunakan operator matematika untuk mengolah dua angka."
+  }
+];
+
+const daftarContoh = document.querySelector("#daftarContoh");
+
+if (daftarContoh) {
+  daftarContoh.innerHTML = contohMateri.map((materi, index) => `
+    <article class="example-card">
+      <span class="example-language">${materi.bahasa}</span>
+      <h3>${materi.judul}</h3>
+      <p>${materi.penjelasan}</p>
+
+      <h4>Contoh Kode</h4>
+      <pre><code>${escapeHTML(materi.kode)}</code></pre>
+
+      <h4>Output</h4>
+      <pre class="example-output">${escapeHTML(materi.output)}</pre>
+
+      <button class="copy-example" data-index="${index}">
+        Salin Kode
+      </button>
+    </article>
+  `).join("");
+
+  daftarContoh.addEventListener("click", async (event) => {
+    const tombol = event.target.closest(".copy-example");
+
+    if (!tombol) return;
+
+    const materi = contohMateri[Number(tombol.dataset.index)];
+
+    try {
+      await navigator.clipboard.writeText(materi.kode);
+      tombol.textContent = "Kode Tersalin!";
+    } catch {
+      tombol.textContent = "Gagal Menyalin";
+    }
+
+    setTimeout(() => {
+      tombol.textContent = "Salin Kode";
+    }, 2000);
+  });
+}
+
+function escapeHTML(teks) {
+  return teks.replace(/[&<>"']/g, (karakter) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#039;"
+  })[karakter]);
+}
