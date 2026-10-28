@@ -1,23 +1,625 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Website belajar Python, HTML, CSS, dan JavaScript dari dasar hingga tingkat lanjut, lengkap dengan contoh, latihan, proyek, dan referensi.">
-  <title>KodingKita — Belajar Pemrograman</title><link rel="stylesheet" href="style.css">
+  <title>KodingKita — Belajar Pemrograman</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#beranda" aria-label="KodingKita beranda"><span class="brand-mark">&lt;/&gt;</span><span>Koding<span class="accent">Kita</span></span></a><button id="menuToggle" class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button><nav id="mainNav"><a href="#beranda">Beranda</a><a href="#materi">Materi</a><a href="#latihan">Latihan</a><a href="#proyek">Proyek</a><a href="#referensi">Referensi</a></nav><button id="themeToggle" class="theme-toggle" aria-label="Ganti tema">☼</button></header>
+
+<header class="topbar">
+  <a class="brand" href="#beranda" aria-label="KodingKita beranda">
+    <span class="brand-mark">&lt;/&gt;</span>
+    <span>Koding<span class="accent">Kita</span></span>
+  </a>
+
+  <button id="menuToggle" class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+
+  <nav id="mainNav">
+    <a href="#beranda">Beranda</a>
+    <a href="#materi">Materi</a>
+    <a href="#latihan">Latihan</a>
+    <a href="#proyek">Proyek</a>
+    <a href="#referensi">Referensi</a>
+  </nav>
+
+  <button id="themeToggle" class="theme-toggle" aria-label="Ganti tema">☼</button>
+</header>
+
 <main>
-<section class="hero" id="beranda"><div class="hero-copy"><span class="eyebrow">PETA BELAJAR PEMROGRAMAN</span><h1>Mulai dari nol.<br><span class="gradient">Bangun sesuatu yang nyata.</span></h1><p>Belajar Python, HTML, CSS, dan JavaScript secara bertahap. Pahami konsepnya, lihat contoh kode, kerjakan latihan, lalu buat proyek sendiri.</p><div class="hero-actions"><a class="button primary" href="#materi">Mulai belajar <span>→</span></a><a class="button secondary" href="#proyek">Lihat proyek</a></div><div class="hero-stats"><div><strong>4</strong><span>Bahasa/teknologi</span></div><div><strong>3</strong><span>Tahap belajar</span></div><div><strong>12+</strong><span>Ide proyek</span></div></div></div><div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="code-window"><div class="window-head"><i></i><i></i><i></i><span>hello_world</span></div><pre><code><span class="code-purple">def</span> <span class="code-blue">mulai_belajar</span>():
+
+  <!-- HERO -->
+  <section class="hero" id="beranda">
+    <div class="hero-copy">
+      <span class="eyebrow">PETA BELAJAR PEMROGRAMAN</span>
+
+      <h1>
+        Mulai dari nol.<br>
+        <span class="gradient">Bangun sesuatu yang nyata.</span>
+      </h1>
+
+      <p>
+        Belajar Python, HTML, CSS, dan JavaScript secara bertahap.
+        Pahami konsepnya, lihat contoh kode, kerjakan latihan,
+        lalu buat proyek sendiri.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#materi">
+          Mulai belajar <span>→</span>
+        </a>
+        <a class="button secondary" href="#proyek">Lihat proyek</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <strong>4</strong>
+          <span>Bahasa/teknologi</span>
+        </div>
+        <div>
+          <strong>3</strong>
+          <span>Tahap belajar</span>
+        </div>
+        <div>
+          <strong>12+</strong>
+          <span>Ide proyek</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+
+      <div class="code-window">
+        <div class="window-head">
+          <i></i>
+          <i></i>
+          <i></i>
+          <span>hello_world</span>
+        </div>
+
+        <pre><code><span class="code-purple">def</span> <span class="code-blue">mulai_belajar</span>():
     pesan = <span class="code-green">"Halo, dunia!"</span>
     <span class="code-yellow">print</span>(pesan)
 
-mulai_belajar()</code></pre><div class="code-foot">● Belajar • Berlatih • Berkarya</div></div><div class="floating-tag tag-html">&lt;HTML&gt;</div><div class="floating-tag tag-css">{ CSS }</div><div class="floating-tag tag-js">JS()</div><div class="floating-tag tag-py">Py</div></div></section>
-<section class="section intro"><div><span class="eyebrow">JALUR BELAJAR</span><h2>Empat alat, banyak kemungkinan.</h2><p>HTML menyusun isi halaman, CSS mengatur tampilan, JavaScript menambahkan interaksi, sedangkan Python berguna untuk program, otomatisasi, pengolahan data, dan pengembangan backend.</p></div><div class="tech-grid"><article class="tech-card py"><div class="tech-icon">Py</div><h3>Python</h3><p>Logika, otomasi, data, dan backend.</p><button data-language="python" class="text-button">Pelajari Python ↗</button></article><article class="tech-card html"><div class="tech-icon">5</div><h3>HTML</h3><p>Struktur dan makna konten web.</p><button data-language="html" class="text-button">Pelajari HTML ↗</button></article><article class="tech-card css"><div class="tech-icon">#</div><h3>CSS</h3><p>Warna, tata letak, animasi, responsif.</p><button data-language="css" class="text-button">Pelajari CSS ↗</button></article><article class="tech-card js"><div class="tech-icon">JS</div><h3>JavaScript</h3><p>Interaksi dan logika di browser.</p><button data-language="javascript" class="text-button">Pelajari JavaScript ↗</button></article></div></section>
-<section class="section learning" id="materi"><div class="section-heading"><div><span class="eyebrow">PERPUSTAKAAN MATERI</span><h2>Pilih jalur belajarmu</h2><p>Materi disusun dari dasar, menengah, sampai lanjutan. Pilih topik untuk melihat penjelasan dan contoh.</p></div><div class="search-wrap"><span>⌕</span><input id="topicSearch" type="search" placeholder="Cari topik..." aria-label="Cari materi"></div></div><div class="language-tabs" role="tablist" aria-label="Pilih bahasa"><button class="lang-tab active" data-language="python">🐍 Python</button><button class="lang-tab" data-language="html">🌐 HTML</button><button class="lang-tab" data-language="css">🎨 CSS</button><button class="lang-tab" data-language="javascript">⚡ JavaScript</button></div><div class="lesson-layout"><aside class="lesson-sidebar"><div class="sidebar-title">DAFTAR MATERI <span id="lessonCount">0</span></div><div id="lessonList" class="lesson-list"></div></aside><article id="lessonDetail" class="lesson-detail" aria-live="polite"></article></div></section>
-<section class="section practice" id="latihan"><div class="section-heading"><div><span class="eyebrow">UJI PEMAHAMAN</span><h2>Latihan singkat</h2><p>Coba jawab tanpa melihat pembahasan terlebih dahulu.</p></div><span class="practice-badge">Latihan pemula</span></div><div class="quiz-card"><div class="quiz-progress"><span id="quizNumber">PERTANYAAN 1 DARI 4</span><span id="quizScore">Skor: 0</span></div><h3 id="quizQuestion"></h3><div id="quizOptions" class="quiz-options"></div><div id="quizFeedback" class="quiz-feedback" aria-live="polite"></div><div class="quiz-controls"><button id="checkAnswer" class="button primary">Periksa jawaban</button><button id="nextQuestion" class="button secondary" hidden>Berikutnya →</button><button id="restartQuiz" class="text-button" hidden>Ulangi latihan</button></div></div></section>
-<section class="section projects" id="proyek"><div class="section-heading"><div><span class="eyebrow">BELAJAR DENGAN MEMBUAT</span><h2>Proyek bertahap</h2><p>Gunakan proyek untuk menggabungkan beberapa konsep sekaligus.</p></div></div><div class="project-grid"><article class="project-card"><div class="project-number">01</div><span class="level beginner">PEMULA</span><h3>Halaman profil pribadi</h3><p>Gunakan HTML untuk judul, paragraf, gambar, tautan, dan daftar.</p><div class="project-tags"><span>HTML</span><span>Konten semantik</span></div><details><summary>Langkah pengerjaan</summary><ol><li>Buat file <code>index.html</code>.</li><li>Tambahkan nama, deskripsi, hobi, dan cita-cita.</li><li>Gunakan heading dan list dengan benar.</li><li>Uji semua tautan di browser.</li></ol></details></article><article class="project-card"><div class="project-number">02</div><span class="level intermediate">MENENGAH</span><h3>Kartu portofolio responsif</h3><p>Gabungkan HTML dan CSS untuk membuat kartu yang rapi di HP dan desktop.</p><div class="project-tags"><span>HTML</span><span>CSS Grid/Flexbox</span></div><details><summary>Langkah pengerjaan</summary><ol><li>Buat struktur profil dan daftar skill.</li><li>Gunakan Flexbox atau Grid.</li><li>Tambahkan media query untuk layar kecil.</li><li>Uji dengan lebar layar berbeda.</li></ol></details></article><article class="project-card"><div class="project-number">03</div><span class="level intermediate">MENENGAH</span><h3>Daftar tugas interaktif</h3><p>Tambah, tandai selesai, dan hapus tugas menggunakan JavaScript.</p><div class="project-tags"><span>DOM</span><span>Events</span></div><details><summary>Langkah pengerjaan</summary><ol><li>Buat input dan tombol tambah.</li><li>Baca nilai input dengan JavaScript.</li><li>Buat elemen tugas dan event klik.</li><li>Tambahkan validasi input kosong.</li></ol></details></article><article class="project-card"><div class="project-number">04</div><span class="level advanced">LANJUTAN</span><h3>Aplikasi catatan Python</h3><p>Latih fungsi, list/dictionary, file, dan penanganan kesalahan.</p><div class="project-tags"><span>Python</span><span>File I/O</span></div><details><summary>Langkah pengerjaan</summary><ol><li>Buat menu tambah dan lihat catatan.</li><li>Pisahkan logika ke beberapa fungsi.</li><li>Simpan catatan ke berkas JSON.</li><li>Tangani input yang tidak valid.</li></ol></details></article><article class="project-card"><div class="project-number">05</div><span class="level advanced">LANJUTAN</span><h3>Dashboard data sederhana</h3><p>Gunakan Python untuk membaca data, membersihkan nilai, dan membuat ringkasan.</p><div class="project-tags"><span>Python</span><span>Data</span></div><details><summary>Langkah pengerjaan</summary><ol><li>Siapkan data contoh berbentuk CSV.</li><li>Baca data dan periksa nilai kosong.</li><li>Hitung jumlah, rata-rata, atau kategori.</li><li>Tampilkan hasil dengan tabel atau grafik.</li></ol></details></article><article class="project-card"><div class="project-number">06</div><span class="level advanced">PORTOFOLIO</span><h3>Website portofolio lengkap</h3><p>Bangun halaman tentang saya, proyek, skill, dan kontak dengan navigasi responsif.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><details><summary>Langkah pengerjaan</summary><ol><li>Rencanakan struktur dan isi halaman.</li><li>Gunakan komponen visual konsisten.</li><li>Tambahkan navigasi dan interaksi.</li><li>Periksa aksesibilitas dan responsivitas.</li><li>Publikasikan setelah pengujian.</li></ol></details></article></div></section>
-<section class="section roadmap"><div><span class="eyebrow">MENUJU MAHIR</span><h2>Jangan buru-buru mengejar label “expert”.</h2><p>Keahlian dibangun lewat pemahaman, latihan, proyek nyata, membaca dokumentasi, dan memperbaiki kode. Ikuti urutan ini dan ulangi materi yang belum dikuasai.</p></div><div class="roadmap-list"><div><span>01</span><section><h3>Dasar</h3><p>Sintaks, variabel, tipe data, struktur dokumen, selector, dan event sederhana.</p></section></div><div><span>02</span><section><h3>Menengah</h3><p>Fungsi, array/list, objek/dictionary, DOM, Flexbox, Grid, form, dan debugging.</p></section></div><div><span>03</span><section><h3>Lanjutan</h3><p>Asynchronous JavaScript, API, modul, testing, Python OOP, file, keamanan dasar, dan performa.</p></section></div><div><span>04</span><section><h3>Siap proyek nyata</h3><p>Git, dokumentasi, aksesibilitas, deployment, review kode, dan proyek yang bisa dipakai orang lain.</p></section></div></div></section>
-<section class="section resources" id="referensi"><div class="section-heading"><div><span class="eyebrow">BELAJAR LEBIH DALAM</span><h2>Referensi online tepercaya</h2><p>Gunakan situs ini untuk memperluas materi dan mencoba contoh di lingkungan latihan.</p></div></div><div class="resource-grid"><a class="resource-card" href="https://docs.python.org/3/tutorial/" target="_blank" rel="noreferrer"><span class="resource-icon">Py</span><div><h3>Python Tutorial</h3><p>Dokumentasi resmi Python untuk sintaks, struktur data, modul, dan kelas.</p><span class="resource-link">docs.python.org ↗</span></div></a><a class="resource-card" href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noreferrer"><span class="resource-icon">MDN</span><div><h3>MDN Web Docs</h3><p>Jalur belajar HTML, CSS, JavaScript, tata letak, dan pengembangan web.</p><span class="resource-link">developer.mozilla.org ↗</span></div></a><a class="resource-card" href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"><span class="resource-icon">H</span><div><h3>W3Schools HTML</h3><p>Contoh pendek dan latihan interaktif untuk memahami dasar HTML.</p><span class="resource-link">w3schools.com ↗</span></div></a><a class="resource-card" href="https://www.freecodecamp.org/learn/" target="_blank" rel="noreferrer"><span class="resource-icon">fcc</span><div><h3>freeCodeCamp</h3><p>Latihan berbasis proyek untuk membangun keterampilan secara bertahap.</p><span class="resource-link">freecodecamp.org ↗</span></div></a><a class="resource-card" href="https://codepen.io/pen/" target="_blank" rel="noreferrer"><span class="resource-icon">{ }</span><div><h3>CodePen</h3><p>Coba eksperimen HTML, CSS, dan JavaScript langsung di browser.</p><span class="resource-link">codepen.io ↗</span></div></a><a class="resource-card" href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" rel="noreferrer"><span class="resource-icon">▶</span><div><h3>Programiz Python</h3><p>Jalankan kode Python sederhana secara online tanpa instalasi.</p><span class="resource-link">programiz.com ↗</span></div></a></div></section>
-<section class="final-cta"><div><span class="eyebrow">LANGKAH PERTAMA</span><h2>Belajar sedikit, praktik setiap hari.</h2><p>Mulai satu materi, ketik ulang contoh kodenya, ubah nilainya, lalu kerjakan latihan tanpa melihat jawaban.</p></div><a class="button primary" href="#materi">Pilih materi sekarang ↑</a></section>
-</main><footer><a class="brand" href="#beranda"><span class="brand-mark">&lt;/&gt;</span><span>Koding<span class="accent">Kita</span></span></a><p>Belajar pemrograman langkah demi langkah. Dibuat untuk latihan dan eksplorasi.</p><span>© <span id="year"></span> KodingKita</span></footer><script src="script.js"></script></body></html>
+mulai_belajar()</code></pre>
+
+        <div class="code-foot">● Belajar • Berlatih • Berkarya</div>
+      </div>
+
+      <div class="floating-tag tag-html">&lt;HTML&gt;</div>
+      <div class="floating-tag tag-css">{ CSS }</div>
+      <div class="floating-tag tag-js">JS()</div>
+      <div class="floating-tag tag-py">Py</div>
+    </div>
+  </section>
+
+  <!-- PENGENALAN -->
+  <section class="section intro">
+    <div>
+      <span class="eyebrow">JALUR BELAJAR</span>
+      <h2>Empat alat, banyak kemungkinan.</h2>
+
+      <p>
+        HTML menyusun isi halaman, CSS mengatur tampilan,
+        JavaScript menambahkan interaksi, sedangkan Python berguna
+        untuk program, otomatisasi, pengolahan data, dan pengembangan backend.
+      </p>
+    </div>
+
+    <div class="tech-grid">
+      <article class="tech-card py">
+        <div class="tech-icon">Py</div>
+        <h3>Python</h3>
+        <p>Logika, otomasi, data, dan backend.</p>
+        <button data-language="python" class="text-button">
+          Pelajari Python ↗
+        </button>
+      </article>
+
+      <article class="tech-card html">
+        <div class="tech-icon">5</div>
+        <h3>HTML</h3>
+        <p>Struktur dan makna konten web.</p>
+        <button data-language="html" class="text-button">
+          Pelajari HTML ↗
+        </button>
+      </article>
+
+      <article class="tech-card css">
+        <div class="tech-icon">#</div>
+        <h3>CSS</h3>
+        <p>Warna, tata letak, animasi, responsif.</p>
+        <button data-language="css" class="text-button">
+          Pelajari CSS ↗
+        </button>
+      </article>
+
+      <article class="tech-card js">
+        <div class="tech-icon">JS</div>
+        <h3>JavaScript</h3>
+        <p>Interaksi dan logika di browser.</p>
+        <button data-language="javascript" class="text-button">
+          Pelajari JavaScript ↗
+        </button>
+      </article>
+    </div>
+  </section>
+
+  <!-- MATERI PEMBELAJARAN -->
+  <section class="section learning" id="materi">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">PERPUSTAKAAN MATERI</span>
+        <h2>Pilih jalur belajarmu</h2>
+        <p>
+          84 materi HTML, CSS, JavaScript, dan Python dari dasar
+          hingga lanjutan. Pilih topik untuk melihat penjelasan,
+          contoh kode, dan latihan mandiri.
+        </p>
+      </div>
+
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input
+          id="topicSearch"
+          type="search"
+          placeholder="Cari topik..."
+          aria-label="Cari materi"
+        >
+      </div>
+    </div>
+
+    <div class="language-tabs" role="tablist" aria-label="Pilih bahasa">
+      <button class="lang-tab active" data-language="python">🐍 Python</button>
+      <button class="lang-tab" data-language="html">🌐 HTML</button>
+      <button class="lang-tab" data-language="css">🎨 CSS</button>
+      <button class="lang-tab" data-language="javascript">⚡ JavaScript</button>
+    </div>
+
+    <div class="lesson-layout">
+      <aside class="lesson-sidebar">
+        <div class="sidebar-title">
+          DAFTAR MATERI
+          <span id="lessonCount">0</span>
+        </div>
+
+        <div id="lessonList" class="lesson-list"></div>
+      </aside>
+
+      <article
+        id="lessonDetail"
+        class="lesson-detail"
+        aria-live="polite"
+      ></article>
+    </div>
+  </section>
+
+  <!-- LATIHAN -->
+  <section class="section practice" id="latihan">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">UJI PEMAHAMAN</span>
+        <h2>Latihan singkat</h2>
+        <p>Coba jawab tanpa melihat pembahasan terlebih dahulu.</p>
+      </div>
+
+      <span class="practice-badge">Latihan pemula</span>
+    </div>
+
+    <div class="quiz-card">
+      <div class="quiz-progress">
+        <span id="quizNumber">PERTANYAAN 1 DARI 4</span>
+        <span id="quizScore">Skor: 0</span>
+      </div>
+
+      <h3 id="quizQuestion"></h3>
+
+      <div id="quizOptions" class="quiz-options"></div>
+
+      <div
+        id="quizFeedback"
+        class="quiz-feedback"
+        aria-live="polite"
+      ></div>
+
+      <div class="quiz-controls">
+        <button id="checkAnswer" class="button primary">
+          Periksa jawaban
+        </button>
+
+        <button id="nextQuestion" class="button secondary" hidden>
+          Berikutnya →
+        </button>
+
+        <button id="restartQuiz" class="text-button" hidden>
+          Ulangi latihan
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYEK -->
+  <section class="section projects" id="proyek">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">BELAJAR DENGAN MEMBUAT</span>
+        <h2>Proyek bertahap</h2>
+        <p>
+          Gunakan proyek untuk menggabungkan beberapa konsep sekaligus.
+        </p>
+      </div>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-number">01</div>
+        <span class="level beginner">PEMULA</span>
+        <h3>Halaman profil pribadi</h3>
+        <p>
+          Gunakan HTML untuk judul, paragraf, gambar, tautan, dan daftar.
+        </p>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>Konten semantik</span>
+        </div>
+
+        <details>
+          <summary>Langkah pengerjaan</summary>
+          <ol>
+            <li>Buat file <code>index.html</code>.</li>
+            <li>Tambahkan nama, deskripsi, hobi, dan cita-cita.</li>
+            <li>Gunakan heading dan list dengan benar.</li>
+            <li>Uji semua tautan di browser.</li>
+          </ol>
+        </details>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">02</div>
+        <span class="level intermediate">MENENGAH</span>
+        <h3>Kartu portofolio responsif</h3>
+        <p>
+          Gabungkan HTML dan CSS untuk membuat kartu yang rapi
+          di HP dan desktop.
+        </p>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS Grid/Flexbox</span>
+        </div>
+
+        <details>
+          <summary>Langkah pengerjaan</summary>
+          <ol>
+            <li>Buat struktur profil dan daftar skill.</li>
+            <li>Gunakan Flexbox atau Grid.</li>
+            <li>Tambahkan media query untuk layar kecil.</li>
+            <li>Uji dengan lebar layar berbeda.</li>
+          </ol>
+        </details>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">03</div>
+        <span class="level intermediate">MENENGAH</span>
+        <h3>Daftar tugas interaktif</h3>
+        <p>
+          Tambah, tandai selesai, dan hapus tugas menggunakan JavaScript.
+        </p>
+
+        <div class="project-tags">
+          <span>DOM</span>
+          <span>Events</span>
+        </div>
+
+        <details>
+          <summary>Langkah pengerjaan</summary>
+          <ol>
+            <li>Buat input dan tombol tambah.</li>
+            <li>Baca nilai input dengan JavaScript.</li>
+            <li>Buat elemen tugas dan event klik.</li>
+            <li>Tambahkan validasi input kosong.</li>
+          </ol>
+        </details>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">04</div>
+        <span class="level advanced">LANJUTAN</span>
+        <h3>Aplikasi catatan Python</h3>
+        <p>
+          Latih fungsi, list/dictionary, file, dan penanganan kesalahan.
+        </p>
+
+        <div class="project-tags">
+          <span>Python</span>
+          <span>File I/O</span>
+        </div>
+
+        <details>
+          <summary>Langkah pengerjaan</summary>
+          <ol>
+            <li>Buat menu tambah dan lihat catatan.</li>
+            <li>Pisahkan logika ke beberapa fungsi.</li>
+            <li>Simpan catatan ke berkas JSON.</li>
+            <li>Tangani input yang tidak valid.</li>
+          </ol>
+        </details>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">05</div>
+        <span class="level advanced">LANJUTAN</span>
+        <h3>Dashboard data sederhana</h3>
+        <p>
+          Gunakan Python untuk membaca data, membersihkan nilai,
+          dan membuat ringkasan.
+        </p>
+
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Data</span>
+        </div>
+
+        <details>
+          <summary>Langkah pengerjaan</summary>
+          <ol>
+            <li>Siapkan data contoh berbentuk CSV.</li>
+            <li>Baca data dan periksa nilai kosong.</li>
+            <li>Hitung jumlah, rata-rata, atau kategori.</li>
+            <li>Tampilkan hasil dengan tabel atau grafik.</li>
+          </ol>
+        </details>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">06</div>
+        <span class="level advanced">PORTOFOLIO</span>
+        <h3>Website portofolio lengkap</h3>
+        <p>
+          Bangun halaman tentang saya, proyek, skill, dan kontak
+          dengan navigasi responsif.
+        </p>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <details>
+          <summary>Langkah pengerjaan</summary>
+          <ol>
+            <li>Rencanakan struktur dan isi halaman.</li>
+            <li>Gunakan komponen visual konsisten.</li>
+            <li>Tambahkan navigasi dan interaksi.</li>
+            <li>Periksa aksesibilitas dan responsivitas.</li>
+            <li>Publikasikan setelah pengujian.</li>
+          </ol>
+        </details>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section roadmap">
+    <div>
+      <span class="eyebrow">MENUJU MAHIR</span>
+      <h2>Jangan buru-buru mengejar label “expert”.</h2>
+
+      <p>
+        Keahlian dibangun lewat pemahaman, latihan, proyek nyata,
+        membaca dokumentasi, dan memperbaiki kode. Ikuti urutan ini
+        dan ulangi materi yang belum dikuasai.
+      </p>
+    </div>
+
+    <div class="roadmap-list">
+
+      <div>
+        <span>01</span>
+        <section>
+          <h3>Dasar</h3>
+          <p>
+            Sintaks, variabel, tipe data, struktur dokumen,
+            selector, dan event sederhana.
+          </p>
+        </section>
+      </div>
+
+      <div>
+        <span>02</span>
+        <section>
+          <h3>Menengah</h3>
+          <p>
+            Fungsi, array/list, objek/dictionary, DOM,
+            Flexbox, Grid, form, dan debugging.
+          </p>
+        </section>
+      </div>
+
+      <div>
+        <span>03</span>
+        <section>
+          <h3>Lanjutan</h3>
+          <p>
+            Asynchronous JavaScript, API, modul, testing,
+            Python OOP, file, keamanan dasar, dan performa.
+          </p>
+        </section>
+      </div>
+
+      <div>
+        <span>04</span>
+        <section>
+          <h3>Siap proyek nyata</h3>
+          <p>
+            Git, dokumentasi, aksesibilitas, deployment,
+            review kode, dan proyek yang bisa dipakai orang lain.
+          </p>
+        </section>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REFERENSI -->
+  <section class="section resources" id="referensi">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">BELAJAR LEBIH DALAM</span>
+        <h2>Referensi online tepercaya</h2>
+        <p>
+          Gunakan situs ini untuk memperluas materi dan mencoba
+          contoh di lingkungan latihan.
+        </p>
+      </div>
+    </div>
+
+    <div class="resource-grid">
+
+      <a
+        class="resource-card"
+        href="https://docs.python.org/3/tutorial/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span class="resource-icon">Py</span>
+        <div>
+          <h3>Python Tutorial</h3>
+          <p>
+            Dokumentasi resmi Python untuk sintaks, struktur data,
+            modul, dan kelas.
+          </p>
+          <span class="resource-link">docs.python.org ↗</span>
+        </div>
+      </a>
+
+      <a
+        class="resource-card"
+        href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span class="resource-icon">MDN</span>
+        <div>
+          <h3>MDN Web Docs</h3>
+          <p>
+            Jalur belajar HTML, CSS, JavaScript, tata letak,
+            dan pengembangan web.
+          </p>
+          <span class="resource-link">developer.mozilla.org ↗</span>
+        </div>
+      </a>
+
+      <a
+        class="resource-card"
+        href="https://www.w3schools.com/html/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span class="resource-icon">H</span>
+        <div>
+          <h3>W3Schools HTML</h3>
+          <p>
+            Contoh pendek dan latihan interaktif untuk memahami dasar HTML.
+          </p>
+          <span class="resource-link">w3schools.com ↗</span>
+        </div>
+      </a>
+
+      <a
+        class="resource-card"
+        href="https://www.freecodecamp.org/learn/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span class="resource-icon">fcc</span>
+        <div>
+          <h3>freeCodeCamp</h3>
+          <p>
+            Latihan berbasis proyek untuk membangun keterampilan
+            secara bertahap.
+          </p>
+          <span class="resource-link">freecodecamp.org ↗</span>
+        </div>
+      </a>
+
+      <a
+        class="resource-card"
+        href="https://codepen.io/pen/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span class="resource-icon">{ }</span>
+        <div>
+          <h3>CodePen</h3>
+          <p>
+            Coba eksperimen HTML, CSS, dan JavaScript langsung di browser.
+          </p>
+          <span class="resource-link">codepen.io ↗</span>
+        </div>
+      </a>
+
+      <a
+        class="resource-card"
+        href="https://www.programiz.com/python-programming/online-compiler/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span class="resource-icon">▶</span>
+        <div>
+          <h3>Programiz Python</h3>
+          <p>
+            Jalankan kode Python sederhana secara online tanpa instalasi.
+          </p>
+          <span class="resource-link">programiz.com ↗</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- AJAKAN BELAJAR -->
+  <section class="final-cta">
+    <div>
+      <span class="eyebrow">LANGKAH PERTAMA</span>
+      <h2>Belajar sedikit, praktik setiap hari.</h2>
+      <p>
+        Mulai satu materi, ketik ulang contoh kodenya, ubah nilainya,
+        lalu kerjakan latihan tanpa melihat jawaban.
+      </p>
+    </div>
+
+    <a class="button primary" href="#materi">
+      Pilih materi sekarang ↑
+    </a>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <a class="brand" href="#beranda">
+    <span class="brand-mark">&lt;/&gt;</span>
+    <span>Koding<span class="accent">Kita</span></span>
+  </a>
+
+  <p>
+    Belajar pemrograman langkah demi langkah.
+    Dibuat untuk latihan dan eksplorasi.
+  </p>
+
+  <span>© <span id="year"></span> KodingKita</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
